@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 元素选择器 */
+        p {
+            color: blue;
+            text-align: center;
+        }
+        /* id选择器 */
+        #pid{
+            color: greenyellow;
+            text-align: center;
+        }
+        /* class选择器 */
+        .pclass{
+            color: cyan;
+            text-align: center;
+        }
+        p.pclass1{
+            color: brown;
+            text-align: center;
+        }
+        .pclass2{
+            color: brown;
+        }
+        .pclass3{
+            text-align: center;
+        }
+        /* 组合选择器 */
+        #p1, #p2{
+            color: burlywood;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS是一门描述性语言，它主要描述HTML文档 -->
+    <!-- CSS描述HTML元素如何显示 -->
+    <!-- CSS可以被放在属性style里面，也可以独立放在style标签里面，也可以独立写成css文件被调用 -->
+    <p><img src="/Users/chendi/Desktop/Visual Studio Code/HTML/image/selector.gif" alt="css的规则演示"></p>
+    <p style="color:red;text-align:center">css标签最高级别，该写法级别最高，所以颜色显示为红色</p>
+    <p>这里的文字颜色为蓝色</p>
+
+    <p id="pid">这是id元素选择器的文本</p>
+    <p class="pclass">这是class元素选择器的文本</p>
+    <p class="pclass1">class元素选择器的css也可以使用元素.className方式绑定</p>
+    <p class="pclass2 pclass3">class类 组合</p>
+    <p id="p1">组合选择器</p>
+    <p id="p1">组合选择器</p>
+</body>
+</html>
